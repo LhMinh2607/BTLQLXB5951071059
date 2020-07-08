@@ -68,49 +68,49 @@ WHERE KhoiHanh='5:00'
 SELECT *
 FROM STAFF
 WHERE NgaySinh =(SELECT MIN(cast(NgaySinh as smalldatetime))
-									FROM STAFF
-									WHERE ChucVu=N'Tài xế')
+		FROM STAFF
+		WHERE ChucVu=N'Tài xế')
 
 --Xuất ra thông tin tài xế trẻ tuổi nhất
 SELECT *
 FROM STAFF
 WHERE NgaySinh =(SELECT MAX(cast(NgaySinh as smalldatetime))
-									FROM STAFF
-									WHERE ChucVu=N'Tài xế')
+		FROM STAFF
+		WHERE ChucVu=N'Tài xế')
 
 --Xuất ra thông tin tiếp viên trẻ tuổi nhất
 SELECT *
 FROM STAFF
 WHERE NgaySinh =(SELECT MAX(cast(NgaySinh as smalldatetime))
-									FROM STAFF
-									WHERE ChucVu=N'Tiếp viên')
+		FROM STAFF
+		WHERE ChucVu=N'Tiếp viên')
 
 --Xuất ra thông tin Tiếp viên lớn tuổi nhất
 SELECT *
 FROM STAFF
 WHERE NgaySinh =(SELECT MIN(cast(NgaySinh as smalldatetime))
-									FROM STAFF
-									WHERE ChucVu=N'Tiếp viên')
+		FROM STAFF
+		WHERE ChucVu=N'Tiếp viên')
 
 --Xuất ra thông tin nhân viên lớn tuổi nhất
 SELECT *
 FROM STAFF
 WHERE NgaySinh =(SELECT MIN(cast(NgaySinh as smalldatetime))
-									FROM STAFF)
+		FROM STAFF)
 
 --Xuất ra thông tin nhân viên nhỏ tuổi nhất
 SELECT *
 FROM STAFF
 WHERE NgaySinh =(SELECT MAX(cast(NgaySinh as smalldatetime))
-									FROM STAFF)
+		FROM STAFF)
 --Xuất ra số xe có ít chuyến nhất
 SELECT Distinct BUS.MaTuyen, TenTuyen, SoChuyen
 FROM BUS, CROSS_STATION
 WHERE BUS.MaTuyen=CROSS_STATION.MaTuyen AND SoChuyen = (SELECT MIN(SoChuyen)
-														FROM BUS)
+							FROM BUS)
 
 --Xuất ra số xe có nhiều chuyến nhất
 SELECT Distinct MaTuyen, TenTuyen, SoChuyen
 FROM BUS
 WHERE SoChuyen = (SELECT MAX(SoChuyen)
-				FROM BUS)
+		FROM BUS)
