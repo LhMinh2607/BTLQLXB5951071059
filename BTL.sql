@@ -1,4 +1,4 @@
-﻿--CREATE DATABASE BusManager
+﻿--CREATE DATABASE BusManager --Tạo DATABASE TRƯỚC RỒI MỚI TẠO BẢNG, NHẬP DỮ LIỆU
 use BusManager
 
 CREATE TABLE HTX
