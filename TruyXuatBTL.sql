@@ -119,7 +119,7 @@ WHERE SoChuyen = (SELECT MAX(SoChuyen)
 select *
 from staff
 where Luong > ANY(
-			select Luong
-			from staff
-			where MaTuyen=N'05'
+	select Luong
+	from staff
+	where MaTuyen=N'05'
 )
