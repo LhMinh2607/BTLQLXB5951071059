@@ -114,3 +114,12 @@ SELECT Distinct MaTuyen, TenTuyen, SoChuyen
 FROM BUS
 WHERE SoChuyen = (SELECT MAX(SoChuyen)
 		FROM BUS)
+
+--9 Xuat ra nhung nhan vien co luong lon hon luong cua it nhat mot nhan vien xe so 05
+select *
+from staff
+where Luong > ANY(
+			select Luong
+			from staff
+			where MaTuyen=N'05'
+)
