@@ -1,4 +1,5 @@
-﻿use BusManager
+﻿--CREATE DATABASE BusManager
+ use BusManager
 
 --0 Lấy ra HTX và số xe của nó
 SELECT *
