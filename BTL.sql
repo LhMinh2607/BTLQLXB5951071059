@@ -99,9 +99,9 @@ INSERT INTO BUS VALUES ('120','0900395645',N'Tuyến xe buýt vòng khu vực tr
 
 
 --nhap Nhan Vien 
-INSERT INTO STAFF VALUES ('08A107','08',N'Nguyễn Văn Cường','07/17/1970',11000000,N'789 Lạc Long Quân P.10 Q.Tân Bình, TP.HCM',N'Nam',N'Tài xế',80,N'Bến Xe Buýt Quận 8- Đại học Quốc Gia')
+INSERT INTO STAFF VALUES ('08A107','08',N'Nguyễn Văn Cường','07/17/1970',11000000,N'789 Lạc Long Quân P.10 Q.Tân Bình, TP.HCM',N'Nam',N'Tài xế',0,N'Bến Xe Buýt Quận 8- Đại học Quốc Gia')
 INSERT INTO STAFF VALUES ('08A108','08',N'Nguyễn Mai Hoa','12/7/1965',8000000,N'78 Lý Thường Kiệt P.8 Q.Tân Bình, TP.HCM',N'Nữ',N'Tiếp Viên',80,N'Bến Xe Buýt Quận 8- Đại học Quốc Gia')
-INSERT INTO STAFF VALUES ('08B109','08',N'Đinh Đình Đỉnh','07/07/1956',11000000,N'69 Phú Châu P.Tam Phú Q.TĐ, TP.HCM',N'Nam',N'Tài xế',105,N'Bến Xe Buýt Quận 8- Đại học Quốc Gia')
+INSERT INTO STAFF VALUES ('08B109','08',N'Đinh Đình Đỉnh','07/07/1956',11000000,N'69 Phú Châu P.Tam Phú Q.TĐ, TP.HCM',N'Nam',N'Tài xế',0,N'Bến Xe Buýt Quận 8- Đại học Quốc Gia')
 INSERT INTO STAFF VALUES ('08B110','08',N'Nguyên Phấn Đông','06/09/1969',8000000,N'70 Phú Châu P.Tam Phú Q.TĐ, TP.HCM',N'Nam',N'Tiếp Viên',105,N'Bến Xe Buýt Quận 8- Đại học Quốc Gia')
 
 INSERT INTO STAFF VALUES ('141E109','141',N'Đậu Bách Khoa','07/12/1983',11000000,N'18 Nguyễn Văn Trỗi P.12 Q.Phú Nhuận, TP.HCM',N'Nam',N'Tài xế',0,N'KDL BCR - Long Trường - KCX Linh Trung 2')
