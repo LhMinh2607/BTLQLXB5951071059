@@ -1,4 +1,4 @@
-﻿USE BusManager
+USE BusManager
 GO
 --Procedure
 --1. Xuất ra số xe buýt đi qua trạm được chỉ định
@@ -81,4 +81,17 @@ AS
 		)
 	END
 EXEC sp_LuongLonHonItNhat1NhanVienXe N'05'
+
+
+
+--7 Xuất ra số xe có khởi hành với giờ quy định
+CREATE PROCEDURE sp_XeKhoiHanhLuc(@Gio time)
+AS
+	BEGIN
+		SELECT MaTuyen, TenTuyen, KhoiHanh
+		FROM BUS
+		WHERE KhoiHanh = @Gio
+	END
+
+EXEC sp_XeKhoiHanhLuc '5:00'
 
